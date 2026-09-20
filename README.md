@@ -1,154 +1,31 @@
-\# Amazon Sales Data Engineering Project
-
-
-
-\## Project Overview
-
-
-
-End-to-end Data Engineering project built using Python, Pandas and PostgreSQL.
-
-
-
-\## Architecture
-
-
-
-CSV Dataset
-
-&#x20;   ↓
-
-Python ETL
-
-&#x20;   ↓
-
-Data Cleaning \& Validation
-
-&#x20;   ↓
-
-Incremental Processing
-
-&#x20;   ↓
-
-PostgreSQL
-
-&#x20;   ↓
-
-SQL Analytics
-
-
-
-\## Technologies
-
-
-
-\- Python
-
-\- Pandas
-
-\- PostgreSQL
-
-\- SQL
-
-\- psycopg2
-
-\- Git
-
-\- GitHub
-
-
-
-\## ETL Features
-
-
-
-\- CSV extraction
-
-\- Data cleaning
-
-\- Data validation
-
-\- Duplicate detection
-
-\- Null validation
-
-\- Incremental loading
-
-\- Batch processing
-
-\- PostgreSQL loading
-
-\- Logging
-
-\- Error handling
-
-
-
-\## Data Quality Checks
-
-
-
-\- NULL checks
-
-\- Duplicate checks
-
-\- Negative quantity checks
-
-\- Negative amount checks
-
-\- Future date checks
-
-
-
-\## Performance Optimization
-
-
-
-\- Index on order\_date
-
-\- Unique index on order\_id + sku
-
-\- EXPLAIN ANALYZE
-
-\- Batch loading
-
-
-
-\## SQL Analysis
-
-
-
-\- Monthly revenue
-
-\- Monthly growth
-
-\- Revenue ranking
-
-\- Top SKU by category
-
-\- Top 3 SKUs per category
-
-\- Daily cumulative revenue
-
-\- LEAD / LAG analysis
-
-
-
-\## Results
-
-
-
-Total records processed: 128,968
-
-
-
-Total quantity: 116,645
-
-
-
-Total revenue: 76,031,284
-
-
-
-ETL execution time: approximately 2–14 seconds depending on processing mode.
-
+# Amazon Sales Data Engineering Project
+
+## 📌 Project Overview
+An end-to-end Data Engineering pipeline designed to process, transform, and analyze Amazon Sales data. The project extracts raw transactional sales data, cleans and transforms it using Python and Pandas, and loads structured data into a PostgreSQL database for analytical querying and reporting.
+
+---
+
+## 🏗️ Architecture & Data Flow
+1. **Source Data:** CSV Dataset containing raw Amazon sales transactions.
+2. **Data Transformation (ETL):** Python & Pandas scripts for data cleaning, handling null values, and format standardization.
+3. **Data Loading:** Storing transformed records into PostgreSQL database tables.
+4. **Data Analytics:** Analytical SQL queries to extract key sales performance insights.
+
+---
+
+## 🛠️ Tech Stack & Tools
+* **Programming Language:** Python
+* **Data Processing:** Pandas, NumPy
+* **Database:** PostgreSQL / SQL
+* **Tools & Environment:** Git, VS Code
+
+---
+
+## 📂 Repository Structure
+```text
+amazon-data-engineering-project/
+├── etl/                # ETL processing scripts
+├── sql/                # SQL queries & DDL schema files
+├── src/                # Core source code and helper functions
+├── .gitignore          # Git ignore file
+└── README.md           # Project documentation
